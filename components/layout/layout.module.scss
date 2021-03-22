@@ -1,0 +1,62 @@
+.borderCircle {
+	border-radius: 9999px;
+}
+
+.headingName {
+	font-size: 1.2em;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: -0.05rem;
+	margin: 1rem 0;
+}
+
+.sidebar {
+	margin: 2rem 0 0 2rem;
+	width: 20rem;
+	height: 100%;
+	position: fixed;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	
+	&:after {
+		background: #bbbbbb;
+		position: absolute;
+		content: '';
+		border-radius: 1px;
+		width: 2px;
+		height: 40rem;
+		top: 0px;
+		right: -10px;
+		bottom: 15px;
+	}
+}
+
+.bioDescription {
+	color: #666;
+	font-size: 0.8rem;
+}
+
+.navList {
+	list-style: none;
+	padding: 0;
+}
+
+.navListItem {
+	list-style: inherit;
+}
+
+.navListLink {
+	color: #666;
+	font-size: 1rem;
+}
+
+.navListLink:hover {
+	text-decoration: underline;
+}
+
+.navListLink .active {
+	color: #0070f3;
+	font-size: 1.1rem;
+	text-decoration: underline solid;
+}
