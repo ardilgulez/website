@@ -1,4 +1,4 @@
-import Layout from './layout/layout';
+import Sidebar from './sidebar/sidebar';
 import Date from './date/date';
 
-export { Layout, Date };
+export { Sidebar, Date };

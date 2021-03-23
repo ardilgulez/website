@@ -1,10 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-import { Layout, Date } from '../components/index';
+import { Sidebar, Date } from '../components/index';
 import { getSortedPostsData } from '../lib/posts';
-
-import * as config from '../config.json';
 
 export async function getStaticProps() {
 	const allPostsData = getSortedPostsData();
@@ -17,10 +15,7 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
 	return (
-		<Layout home>
-			<Head>
-				<title>{config.siteTitle}</title>
-			</Head>
+		<Sidebar activeTab="blog">
 			{/* Add this <section> tag below the existing <section> tag */}
 			{/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
 				<h2 className={utilStyles.headingLg}>Blog</h2>
@@ -38,6 +33,6 @@ export default function Home({ allPostsData }) {
 					))}
 				</ul>
 			</section> */}
-		</Layout>
+		</Sidebar>
 	);
 }

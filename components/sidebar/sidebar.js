@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from './layout.module.scss';
+import styles from './sidebar.module.scss';
 import Link from 'next/link';
 import Icon from '../icon/icon';
 import * as config from '../../config.json';
 
-export default function Layout({ children }) {
+export default function Sidebar({ activeTab }) {
 	return (
 		<div className={styles.sidebar}>
 			<Head>
@@ -13,6 +13,7 @@ export default function Layout({ children }) {
 				<meta name="description" content="Learn how to build a personal website using Next.js" />
 				<meta name="og:title" content={config.siteTitle} />
 				<meta name="twitter:card" content="summary_large_image" />
+				<title>{config.siteTitle}</title>
 			</Head>
 			<div className={styles.header}>
 				<Image
@@ -31,19 +32,21 @@ export default function Layout({ children }) {
 			<div>
 				<nav className="">
 					<ul className={styles.navList}>
-						<li className={styles.navListItem}>
+						<li key="blog" className={styles.navListItem}>
 							<Link href="/">
-								<a className={styles.active}>Articles</a>
+								<a className={activeTab === 'blog' ? styles.active : styles.navListLink}>Blog</a>
 							</Link>
 						</li>
-						<li className={styles.navListItem}>
-							<Link href="/pages/about">
-								<a className={styles.navListLink}>About me</a>
+						<li key="about" className={styles.navListItem}>
+							<Link href="/about">
+								<a className={activeTab === 'about' ? styles.active : styles.navListLink}>About me</a>
 							</Link>
 						</li>
-						<li className={styles.navListItem}>
-							<Link href="/pages/contacts">
-								<a className={styles.navListLink}>Contact me</a>
+						<li key="contacts" className={styles.navListItem}>
+							<Link href="/contacts">
+								<a className={activeTab === 'contacts' ? styles.active : styles.navListLink}>
+									Contact me
+								</a>
 							</Link>
 						</li>
 					</ul>
@@ -59,7 +62,6 @@ export default function Layout({ children }) {
 					<p>© All Rights Reserved</p>
 				</section>
 			</div>
-			<main>{children}</main>
 		</div>
 	);
 }

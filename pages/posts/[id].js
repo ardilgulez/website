@@ -3,18 +3,19 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 
 const Post = ({ postData }) => (
-	<Layout>
-		<Head>
-			<title>{postData.title}</title>
-		</Head>
-		<article>
-			<h1>{postData.title}</h1>
-			<div>
-				<Date dateString={postData.date} />
-			</div>
-			<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-		</article>
-	</Layout>
+	<div />
+	// <Layout>
+	// 	<Head>
+	// 		<title>{postData.title}</title>
+	// 	</Head>
+	// 	<article>
+	// 		<h1>{postData.title}</h1>
+	// 		<div>
+	// 			<Date dateString={postData.date} />
+	// 		</div>
+	// 		<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+	// 	</article>
+	// </Layout>
 );
 
 const getStaticPaths = async () => {
