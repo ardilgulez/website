@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
-import { Layout, Date, siteTitle } from '../components/index';
+import { Layout, Date } from '../components/index';
 import { getSortedPostsData } from '../lib/posts';
+
+import * as config from '../config.json';
 
 export async function getStaticProps() {
 	const allPostsData = getSortedPostsData();
@@ -17,7 +19,7 @@ export default function Home({ allPostsData }) {
 	return (
 		<Layout home>
 			<Head>
-				<title>{siteTitle}</title>
+				<title>{config.siteTitle}</title>
 			</Head>
 			{/* Add this <section> tag below the existing <section> tag */}
 			{/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

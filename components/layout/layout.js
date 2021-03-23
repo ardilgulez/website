@@ -3,9 +3,7 @@ import Image from 'next/image';
 import styles from './layout.module.scss';
 import Link from 'next/link';
 import Icon from '../icon/icon';
-
-const name = 'Kemal Ardıl Gülez';
-export const siteTitle = `${name} | Personal Website`;
+import * as config from '../../config.json';
 
 export default function Layout({ children }) {
 	return (
@@ -13,7 +11,7 @@ export default function Layout({ children }) {
 			<Head>
 				<link rel="icon" href="/favicon.ico" />
 				<meta name="description" content="Learn how to build a personal website using Next.js" />
-				<meta name="og:title" content={siteTitle} />
+				<meta name="og:title" content={config.siteTitle} />
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
 			<div className={styles.header}>
@@ -23,9 +21,9 @@ export default function Layout({ children }) {
 					className={styles.borderCircle}
 					height={144}
 					width={144}
-					alt={name}
+					alt={config.name}
 				/>
-				<h1 className={styles.headingName}>{name}</h1>
+				<h1 className={styles.headingName}>{config.name}</h1>
 				<section className={styles.bioDescription}>
 					<p>I help computers grant my wishes for the past 7+ years.</p>
 				</section>
@@ -52,9 +50,9 @@ export default function Layout({ children }) {
 				</nav>
 			</div>
 			<div className={styles.socialSection}>
-				<Icon name="Twitter" />
-				<Icon name="Linkedin" />
-				<Icon name="Github" />
+				{Object.keys(config.socialLinks).map((social) => (
+					<Icon name={social} link={config.socialLinks[social]} />
+				))}
 			</div>
 			<div>
 				<section className={styles.bioDescription}>

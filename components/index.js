@@ -1,4 +1,4 @@
-import Layout, { siteTitle } from './layout/layout';
+import Layout from './layout/layout';
 import Date from './date/date';
 
-export { Layout, siteTitle, Date };
+export { Layout, Date };

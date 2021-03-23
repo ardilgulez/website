@@ -6,10 +6,10 @@ const getIconWithName = (name) => {
 	return Icons[name.toUpperCase()];
 };
 
-const Icon = ({ name }) => {
+const Icon = ({ name, link }) => {
 	const icon = getIconWithName(name);
 	return (
-		<a className={styles.socialButton}>
+		<a className={styles.socialButton} href={link} target="_blank">
 			<svg className={styles['icon']} viewBox={icon.viewBox}>
 				<title>{name}</title>
 				<path d={icon.path} />
