@@ -2,12 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from './layout.module.scss';
 import Link from 'next/link';
-
-import ICONS from '../../lib/icons';
 import Icon from '../icon/icon';
 
-const name = 'Kemal Ardil Gülez';
-export const siteTitle = 'Kemal Ardil Gülez | Personal Website';
+const name = 'Kemal Ardıl Gülez';
+export const siteTitle = `${name} | Personal Website`;
 
 export default function Layout({ children }) {
 	return (
@@ -28,10 +26,8 @@ export default function Layout({ children }) {
 					alt={name}
 				/>
 				<h1 className={styles.headingName}>{name}</h1>
-			</div>
-			<div>
 				<section className={styles.bioDescription}>
-					<p>Helping computers grant my wishes is both my job and my passion for the past 7+ years.</p>
+					<p>I help computers grant my wishes for the past 7+ years.</p>
 				</section>
 			</div>
 			<div>
@@ -39,7 +35,7 @@ export default function Layout({ children }) {
 					<ul className={styles.navList}>
 						<li className={styles.navListItem}>
 							<Link href="/">
-								<a className={styles.navListLink & styles.active}>Articles</a>
+								<a className={styles.active}>Articles</a>
 							</Link>
 						</li>
 						<li className={styles.navListItem}>
@@ -55,8 +51,15 @@ export default function Layout({ children }) {
 					</ul>
 				</nav>
 			</div>
+			<div className={styles.socialSection}>
+				<Icon name="Twitter" />
+				<Icon name="Linkedin" />
+				<Icon name="Github" />
+			</div>
 			<div>
-				<Icon name={name} icon={ICONS.TWITTER} />
+				<section className={styles.bioDescription}>
+					<p>© All Rights Reserved</p>
+				</section>
 			</div>
 			<main>{children}</main>
 		</div>

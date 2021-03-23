@@ -16,3 +16,22 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.socialButton {
+	color: #313131;
+	margin-right: 1rem;
+	padding: 5px;
+	border: 1px solid #a7a7a7;
+	align-items: center;
+	align-content: center;
+	height: 2.1875rem;
+	width: 2.1875rem;
+	border-radius: 50%;
+	display: flex;
+}
+
+.socialButton:hover {
+	color: #0070f3;
+	border-color: #0070f3;
+    cursor: pointer;
+}

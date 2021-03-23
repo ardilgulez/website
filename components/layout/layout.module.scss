@@ -3,7 +3,7 @@
 }
 
 .headingName {
-	font-size: 1.2em;
+	font-size: 2rem;
 	line-height: 1.2;
 	font-weight: 800;
 	letter-spacing: -0.05rem;
@@ -12,8 +12,9 @@
 
 .sidebar {
 	margin: 2rem 0 0 2rem;
+	top: 0;
 	width: 20rem;
-	height: 100%;
+	height: 70%;
 	position: fixed;
 	display: flex;
 	flex-flow: column nowrap;
@@ -25,7 +26,7 @@
 		content: '';
 		border-radius: 1px;
 		width: 2px;
-		height: 40rem;
+		height: 100%;
 		top: 0px;
 		right: -10px;
 		bottom: 15px;
@@ -34,7 +35,7 @@
 
 .bioDescription {
 	color: #666;
-	font-size: 0.8rem;
+	font-size: 1rem;
 }
 
 .navList {
@@ -48,15 +49,20 @@
 
 .navListLink {
 	color: #666;
-	font-size: 1rem;
+	font-size: 1.25rem;
 }
 
 .navListLink:hover {
 	text-decoration: underline;
 }
 
-.navListLink .active {
+.active {
 	color: #0070f3;
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 	text-decoration: underline solid;
+}
+
+.socialSection {
+	display: flex;
+	flex-flow: row nowrap;
 }
