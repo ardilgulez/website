@@ -32,14 +32,14 @@ export default function Sidebar({ activeTab }) {
 			<div>
 				<nav className="">
 					<ul className={styles.navList}>
-						<li key="blog" className={styles.navListItem}>
+						<li key="about" className={styles.navListItem}>
 							<Link href="/">
-								<a className={activeTab === 'blog' ? styles.active : styles.navListLink}>Blog</a>
+								<a className={activeTab === 'about' ? styles.active : styles.navListLink}>About me</a>
 							</Link>
 						</li>
-						<li key="about" className={styles.navListItem}>
-							<Link href="/about">
-								<a className={activeTab === 'about' ? styles.active : styles.navListLink}>About me</a>
+						<li key="blog" className={styles.navListItem}>
+							<Link href="/blog">
+								<a className={activeTab === 'blog' ? styles.active : styles.navListLink}>Blog</a>
 							</Link>
 						</li>
 						<li key="contacts" className={styles.navListItem}>

@@ -1,0 +1,67 @@
+.pageSection {
+    display: table-cell;
+	width: 80%;
+	vertical-align: top;
+    padding: 0 5rem;
+}
+
+.outerContainer {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.aboutTitle {
+    font-size: 2rem;
+	margin-bottom: 10px;
+	margin-top: 25px;
+}
+
+.employment {
+	&:before {
+		background: #bbbbbb;
+		content: '';
+		border-radius: 1px;
+		height: 2px;
+		width: 100%;
+		display: block;
+	}
+}
+
+.employmentDetails {
+	padding: 0 2rem;
+}
+
+.employmentTitle {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 25px 0 15px;
+}
+
+.employmentSubtitle {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 15px 0;
+}
+
+.titleText {
+	margin-right: 2rem;
+	margin: 10px 0 2px 0;
+}
+
+.dateSpan {
+	font-size: 0.75rem;
+	color: #525252;
+}
+
+.jobDetails{
+	line-height: 1.1;
+}
+
+.responsibilityList {
+	margin: 0 0 45px;
+}

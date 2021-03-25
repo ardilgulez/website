@@ -1,19 +1,9 @@
-.borderCircle {
-	border-radius: 9999px;
-}
-
-.headingName {
-	font-size: 2rem;
-	line-height: 1.2;
-	font-weight: 800;
-	letter-spacing: -0.05rem;
-	margin: 1rem 0;
-}
-
 .sidebar {
 	margin: 2rem 0 0 2rem;
 	top: 0;
-	width: 20rem;
+	display: table-cell;
+	width: 20%;
+	vertical-align: top;
 	height: 70%;
 	position: fixed;
 	display: flex;
@@ -33,6 +23,18 @@
 	}
 }
 
+.borderCircle {
+	border-radius: 9999px;
+}
+
+.headingName {
+	font-size: 2rem;
+	line-height: 1.2;
+	font-weight: 800;
+	letter-spacing: -0.05rem;
+	margin: 1rem 0;
+}
+
 .bioDescription {
 	color: #666;
 	font-size: 1rem;
@@ -41,6 +43,7 @@
 .navList {
 	list-style: none;
 	padding: 0;
+	line-height: 1.5;
 }
 
 .navListItem {
