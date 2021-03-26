@@ -26,7 +26,7 @@ export default function Sidebar({ activeTab }) {
 				/>
 				<h1 className={styles.headingName}>{config.name}</h1>
 				<section className={styles.bioDescription}>
-					<p>I help computers grant my wishes for the past 7+ years.</p>
+					<p>{config.bio}</p>
 				</section>
 			</div>
 			<div>
@@ -54,12 +54,12 @@ export default function Sidebar({ activeTab }) {
 			</div>
 			<div className={styles.socialSection}>
 				{Object.keys(config.socialLinks).map((social) => (
-					<Icon name={social} link={config.socialLinks[social]} />
+					<Icon key={social} name={social} link={config.socialLinks[social]} />
 				))}
 			</div>
 			<div>
 				<section className={styles.bioDescription}>
-					<p>© All Rights Reserved</p>
+					<p>{config.credits}</p>
 				</section>
 			</div>
 		</div>

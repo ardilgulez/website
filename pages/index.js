@@ -17,14 +17,14 @@ export default function About({ config }) {
 						My Employment History
 					</h1>
 					{config.employmentHistory.map((item) => (
-						<div className={styles.employment}>
+						<div key={item.name} className={styles.employment}>
 							<div className={styles.employmentTitle}>
 								<h2 className={styles.titleText}>{item.name}</h2>
 								<span className={styles.dateSpan}>{item.dates}</span>
 							</div>
 							<div className={styles.employmentDetails}>
 								{item.titles.map((titleItem) => (
-									<div className={styles.employmentSubtitle}>
+									<div key={titleItem.title} className={styles.employmentSubtitle}>
 										<h4 className={styles.titleText}>{titleItem.title}</h4>
 										{item.titles.length > 1 && (
 											<span className={styles.dateSpan}>{titleItem.date}</span>
@@ -33,7 +33,9 @@ export default function About({ config }) {
 								))}
 								<p className={styles.jobDetails}>{item.description}</p>
 								<ul className={[ styles.responsibilityList, styles.jobDetails ].join(' ')}>
-									{item.responsibilities.map((responsibility) => <li>{responsibility}</li>)}
+									{item.responsibilities.map((responsibility) => (
+										<li key={responsibility}>{responsibility}</li>
+									))}
 								</ul>
 							</div>
 						</div>

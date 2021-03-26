@@ -1,0 +1,63 @@
+.outerContainer {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.pageSection {
+    display: table-cell;
+	width: 80%;
+	vertical-align: top;
+    padding: 0 5rem;
+}
+
+.contactForm {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.formField {
+    display: block;
+    margin-bottom: 10px;
+    width: 50%;
+    line-height: 1.3;
+}
+
+.formInput {
+    appearance: none;
+    right: 0;
+    border: 1px solid #9a9a9a;
+    border-radius: 3px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 0.875rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.formTextField {
+    height: 30px;
+}
+
+.formTextArea {
+    height: 100px;
+}
+
+.submitButton {
+    width: 100%;
+    height: 30px;
+    background-color: #00000000;
+    border: 1px solid #313131;
+    border-radius: 3px;
+    color: #000000;
+    font-size: 0.875rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.submitButton:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.submitButton:active {
+    border: 2px solid #313131;
+}
