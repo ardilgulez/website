@@ -16,15 +16,19 @@ export default function Sidebar({ activeTab }) {
 				<title>{config.siteTitle}</title>
 			</Head>
 			<div className={styles.header}>
-				<Image
-					priority
-					src="/images/profile.jpg"
-					className={styles.borderCircle}
-					height={144}
-					width={144}
-					alt={config.name}
-				/>
-				<h1 className={styles.headingName}>{config.name}</h1>
+				<Link href="/">
+					<Image
+						priority
+						src="/images/profile.jpg"
+						className={[ styles.borderCircle, styles.homeLink ].join(' ')}
+						height={144}
+						width={144}
+						alt={config.name}
+					/>
+				</Link>
+				<Link href="/">
+					<h1 className={[ styles.headingName, styles.homeLink ].join(' ')}>{config.name}</h1>
+				</Link>
 				<section className={styles.bioDescription}>
 					<p>{config.bio}</p>
 				</section>
