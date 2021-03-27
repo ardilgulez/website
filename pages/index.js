@@ -37,6 +37,11 @@ export default function About({ config }) {
 										<li key={responsibility}>{responsibility}</li>
 									))}
 								</ul>
+								<div className={styles.techTagContainer}>
+									{item.technologies.map((technology) => (
+										<span className={styles.techTag}>{technology}</span>
+									))}
+								</div>
 							</div>
 						</div>
 					))}

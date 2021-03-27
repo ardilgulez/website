@@ -30,6 +30,7 @@
 
 .employmentDetails {
 	padding: 0 2rem;
+	margin: 0 0 45px;
 }
 
 .employmentTitle {
@@ -62,6 +63,17 @@
 	line-height: 1.1;
 }
 
-.responsibilityList {
-	margin: 0 0 45px;
+.techTagsContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	margin-bottom: 10px;
+}
+
+.techTag {
+	display: inline-flex;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 0.75rem;
+	background-color: #ababab;
+	margin: 0 3px 0 0;
+	padding: 3px;
 }
