@@ -1,3 +1,5 @@
+@import url('https://code.cdn.mozilla.net/fonts/fira.css');
+
 .pageSection {
     display: table-cell;
 	width: 80%;
@@ -71,9 +73,10 @@
 
 .techTag {
 	display: inline-flex;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Fira Sans',sans-serif;
 	font-size: 0.75rem;
 	background-color: #ababab;
 	margin: 0 3px 0 0;
-	padding: 3px;
+	padding: 5px;
+	border-radius: 3px;
 }

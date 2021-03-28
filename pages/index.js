@@ -39,7 +39,9 @@ export default function About({ config }) {
 								</ul>
 								<div className={styles.techTagContainer}>
 									{item.technologies.map((technology) => (
-										<span className={styles.techTag}>{technology}</span>
+										<span key={technology} className={styles.techTag}>
+											{technology}
+										</span>
 									))}
 								</div>
 							</div>
