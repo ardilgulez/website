@@ -1,0 +1,72 @@
+@import url('https://code.cdn.mozilla.net/fonts/fira.css');
+@import '../../styles/vars.scss';
+
+.header {
+    font-family: $fira_sans_font_family;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: $header_footer_background_color;
+}
+
+.navContainer {
+    margin: 0 auto;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.welcome {
+    display: inline-flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+
+.welcomeText {
+    font-size: $nav_left_font_size;
+    color: $nav_list_item_color;
+}
+
+.nav {
+    display: inline-flex;
+    align-self: flex-end;
+    align-items: flex-end;
+    justify-self: center;
+    justify-content: center;
+    justify-items: stretch;
+    flex-flow: row nowrap;
+}
+
+.navList {
+    display: inline-flex;
+	list-style: none;
+	padding: 0;
+}
+
+.navListItem {
+    display: inline-flex;
+    margin: 10px;
+	list-style: inherit;
+	color: $nav_list_item_color;
+}
+
+.navListLink {
+	color: $nav_list_item_color;
+	font-size: $nav_right_font_size;
+}
+
+.navListLink:hover {
+	text-decoration: underline;
+}
+
+.active {
+	color: $nav_list_active_page_color;
+	font-size: $nav_right_font_size;
+}
