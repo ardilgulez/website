@@ -14,7 +14,7 @@
 
 .navContainer {
     margin: 0 auto;
-    max-width: 1080px;
+    max-width: $page_width;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

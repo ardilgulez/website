@@ -1,4 +1,4 @@
-import { Sidebar, Date, Header, Footer } from '../components/index';
+import { Layout, Date } from '../components/index';
 import { getSortedPostsData } from '../lib/posts';
 
 export async function getStaticProps() {
@@ -12,9 +12,7 @@ export async function getStaticProps() {
 
 export default function Blog({ config, allPostsData }) {
 	return (
-		<div>
-			<Sidebar activeTab="blog" />
-			<Header activeTab="blog" />
+		<Layout activeTab={'blog'} config={config}>
 			{/* Add this <section> tag below the existing <section> tag */}
 			{/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
 				<h2 className={utilStyles.headingLg}>Blog</h2>
@@ -32,7 +30,6 @@ export default function Blog({ config, allPostsData }) {
 					))}
 				</ul>
 			</section> */}
-			<Footer config={config} />
-		</div>
+		</Layout>
 	);
 }

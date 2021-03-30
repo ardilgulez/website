@@ -1,0 +1,12 @@
+@import '../../styles/vars.scss';
+
+.outerContainer {
+	height: 100%;
+	width: 100%;
+}
+
+.pageContainer {
+	margin: 4rem auto;
+	max-width: $page_width;
+    padding: 2rem;
+}
