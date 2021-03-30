@@ -1,12 +1,13 @@
-import { Sidebar } from '../components/index';
 import * as styles from './index.module.scss';
+import { Sidebar, Footer, Header } from '../components/index';
 
 export default function About({ config }) {
 	return (
 		<div className={styles.outerContainer}>
 			<Sidebar activeTab="about" />
-			<div className={styles.pageSection}>
-				<section title="about">
+			<Header activeTab="about" />
+			<div className={styles.pageContainer}>
+				<section className={styles.pageSection} title="about">
 					<h1 className={styles.aboutTitle}>How about me?</h1>
 					<p>
 						I'm a full stack developer for the past 7+ years (since 2013, to be exact), now working at Hexad
@@ -16,6 +17,8 @@ export default function About({ config }) {
 					<h1 className={styles.aboutTitle} style={{ marginBottom: '2rem' }}>
 						My Employment History
 					</h1>
+				</section>
+				<section title="employment-history" className={styles.pageSection}>
 					{config.employmentHistory.map((item) => (
 						<div key={item.name} className={styles.employment}>
 							<div className={styles.employmentTitle}>
@@ -49,6 +52,7 @@ export default function About({ config }) {
 					))}
 				</section>
 			</div>
+			<Footer config={config} />
 		</div>
 	);
 }

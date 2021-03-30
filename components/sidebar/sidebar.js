@@ -19,6 +19,7 @@ export default function Sidebar({ activeTab }) {
 				<Link href="/">
 					<Image
 						priority
+						layout="responsive"
 						src="/images/profile.jpg"
 						className={[ styles.borderCircle, styles.homeLink ].join(' ')}
 						height={144}
@@ -38,7 +39,7 @@ export default function Sidebar({ activeTab }) {
 					<ul className={styles.navList}>
 						<li key="about" className={styles.navListItem}>
 							<Link href="/">
-								<a className={activeTab === 'about' ? styles.active : styles.navListLink}>About me</a>
+								<a className={activeTab === 'about' ? styles.active : styles.navListLink}>Me</a>
 							</Link>
 						</li>
 						<li key="blog" className={styles.navListItem}>
@@ -48,9 +49,7 @@ export default function Sidebar({ activeTab }) {
 						</li>
 						<li key="contacts" className={styles.navListItem}>
 							<Link href="/contacts">
-								<a className={activeTab === 'contacts' ? styles.active : styles.navListLink}>
-									Contact me
-								</a>
+								<a className={activeTab === 'contacts' ? styles.active : styles.navListLink}>Hello</a>
 							</Link>
 						</li>
 					</ul>
