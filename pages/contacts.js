@@ -9,9 +9,9 @@ export default function Contacts({ config }) {
 
 		const res = await fetch('/api/contacts', {
 			body: JSON.stringify({
-				firstName: firstName.value,
-				lastName: lastName.value,
-				email: email.value,
+				senderFirstName: firstName.value,
+				senderLastName: lastName.value,
+				senderEmail: email.value,
 				message: message.value
 			}),
 			headers: {
