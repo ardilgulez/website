@@ -6,6 +6,7 @@ const PageLayout = ({ config, activeTab, children }) => (
 		<Sidebar activeTab={activeTab} />
 		<Header activeTab={activeTab} />
 		<div className={styles.pageContainer}>{children}</div>
+		<span>® by Kemal Ardil Gülez</span>
 		<Footer config={config} />
 	</div>
 );
