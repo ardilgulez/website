@@ -9,7 +9,8 @@ const limiter = rateLimit({
 
 export default async function handler(req, res) {
 	try {
-		await limiter.check(res, 1, 'CACHE_TOKEN'); // 10 requests per minute
+		console.log(req.connection.remoteAddress);
+		await limiter.check(res, 5, req.connection.remoteAddress); // 10 requests per minute
 		const response = await fetch(API_URL, {
 			body: JSON.stringify(req.body),
 			headers: {
