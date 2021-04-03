@@ -1,8 +1,10 @@
-import { Layout } from '../components/index';
+import { Layout, ContactModal } from '../components/index';
+import React, { useState } from 'react';
 
 import * as styles from './contacts.module.scss';
 
 export default function Contacts({ config }) {
+	const [ modalOpen, setModalOpen ] = useState(false);
 	const sendContact = async (event) => {
 		event.preventDefault();
 		const { firstName, lastName, email, message } = event.target;
@@ -21,11 +23,12 @@ export default function Contacts({ config }) {
 		});
 
 		const result = await res.json();
-		console.log(result);
+		setModalOpen(!modalOpen);
 	};
 
 	return (
 		<Layout activeTab={'contacts'} config={config}>
+			<ContactModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
 			<div className={styles.formContainer}>
 				<h1>Say What's Up!</h1>
 				<form className={styles.contactForm} onSubmit={sendContact} autoComplete="on">
@@ -66,14 +69,14 @@ export default function Contacts({ config }) {
 					<div className={styles.formField}>
 						<textarea
 							className={[ styles.formInput, styles.formTextArea ].join(' ')}
-							placeholder="Comments (min 50 characters)"
+							placeholder="Comments (min 10 characters)"
 							id="message"
 							name="message"
 							rows="2"
 							cols="10"
 							autoComplete="off"
 							required={true}
-							minLength={50}
+							minLength={10}
 						/>
 					</div>
 					<div className={styles.formButton}>
