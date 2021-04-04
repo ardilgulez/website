@@ -1,7 +1,7 @@
 {
 	"name": "Kemal Ardıl Gülez",
 	"url": "https://ardilgulez.me",
-	"image": "/hero-image.png",
+	"image": "https://ardilgulez.me/hero-image.png",
 	"description": "Passionate Software Engineer building himself up every day. Work experience: Java & Spring Boot, Python & Django, Node & Express, React, Angular.",
 	"nowLearning": "Now Learning: Electron.",
 	"googleSiteVerification": "l-2bAPepzIrUEjJVEiLN89cR6ajZ48CZqRzIrzC0-i8",
