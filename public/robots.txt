@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ardilgulez.me/sitemap.xml
+Host: https://ardilgulez.me
