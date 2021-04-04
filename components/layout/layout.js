@@ -14,9 +14,9 @@ const Layout = ({ config, activeTab, children }) => (
 			<meta property="og:title" content={config.siteTitle} />
 			<meta name="twitter:title" content={config.siteTitle} />
 			{/* Description */}
-			<meta name="description" content={config.description} />
-			<meta property="og:description" content={config.description} />
-			<meta name="twitter:description" content={config.description} />
+			<meta name="description" content={`${config.description} ${config.nowLearning}`} />
+			<meta property="og:description" content={`${config.description} ${config.nowLearning}`} />
+			<meta name="twitter:description" content={`${config.description} ${config.nowLearning}`} />
 			{/* Image */}
 			<meta name="image" content={config.image} />
 			<meta property="og:image" content={config.image} />
@@ -27,8 +27,8 @@ const Layout = ({ config, activeTab, children }) => (
 			{/* Google Site Verification */}
 			<meta name="google-site-verification" content={config.googleSiteVerification} />
 		</Head>
-		<Sidebar activeTab={activeTab} />
-		<Header activeTab={activeTab} />
+		<Sidebar activeTab={activeTab} config={config} />
+		<Header activeTab={activeTab} config={config} />
 		<main className={styles.pageContainer}>{children}</main>
 		{/* <span>® by Kemal Ardil Gülez</span> */}
 		<Footer config={config} />

@@ -6,11 +6,8 @@ export default function About({ config }) {
 		<Layout config={config} activeTab={'about'}>
 			<section title="about">
 				<h1 className={styles.aboutTitle}>How about me?</h1>
-				<p>
-					I'm a full stack developer for the past 7+ years (since 2013, to be exact), now working at Hexad
-					GmbH.
-				</p>
-				<p>Currently Learning: Android App Development (Native)</p>
+				<p>{config.description}</p>
+				<p>{config.nowLearning}</p>
 				<h1 className={styles.aboutTitle} style={{ marginBottom: '2rem' }}>
 					My Employment History
 				</h1>

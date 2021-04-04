@@ -1,7 +1,7 @@
 import * as styles from './header.module.scss';
 import Link from 'next/link';
 
-export default function Header({ activeTab }) {
+export default function Header({ activeTab, config }) {
 	return (
 		<header role="banner" className={styles.header}>
 			<div className={styles.navContainer}>
@@ -9,7 +9,7 @@ export default function Header({ activeTab }) {
 					<ul className={styles.navList}>
 						<li className={styles.navListItem}>
 							<Link href="/">
-								<a className={styles.welcomeText}>Kemal Ardıl Gülez</a>
+								<a className={styles.welcomeText}>{config.name}</a>
 							</Link>
 						</li>
 					</ul>

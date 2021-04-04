@@ -31,6 +31,11 @@
 .welcomeText {
     font-size: $nav_left_font_size;
     color: $nav_list_item_color;
+
+    &:hover {
+        text-decoration: underline;
+        color: $nav_list_item_color;
+    }
 }
 
 .nav {
@@ -63,9 +68,15 @@
 
 .navListLink:hover {
 	text-decoration: underline;
+	color: $nav_list_item_color;
 }
 
 .active {
 	color: $nav_list_active_page_color;
 	font-size: $nav_right_font_size;
+    text-decoration: underline;
+    &:hover {
+        color: $nav_list_active_page_color;
+        text-decoration: underline;
+    }
 }

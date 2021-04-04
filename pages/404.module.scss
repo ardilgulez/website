@@ -12,5 +12,10 @@
 
 .link {
     font-family: inherit;
-    font-style: 1em normal $nav_list_active_page_color;
+    color: $nav_list_active_page_color;
+
+    &:hover {
+        color: $nav_list_active_page_color;
+        text-decoration: underline;
+    }
 }
