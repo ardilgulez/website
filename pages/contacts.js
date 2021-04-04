@@ -29,7 +29,7 @@ export default function Contacts({ config }) {
 	return (
 		<Layout activeTab={'contacts'} config={config}>
 			<ContactModal modalOpen={modalOpen} setModalOpen={setModalOpen} />
-			<div className={styles.formContainer}>
+			<section title="contact-form">
 				<h1>Say What's Up!</h1>
 				<form className={styles.contactForm} onSubmit={sendContact} autoComplete="on">
 					<div className={styles.formField}>
@@ -85,7 +85,7 @@ export default function Contacts({ config }) {
 						</button>
 					</div>
 				</form>
-			</div>
+			</section>
 		</Layout>
 	);
 }

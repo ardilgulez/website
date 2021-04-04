@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { Sidebar, Footer, Header } from '../';
 import * as styles from './layout.module.scss';
 
-const PageLayout = ({ config, activeTab, children }) => (
+const Layout = ({ config, activeTab, children }) => (
 	<div className={styles.outerContainer}>
 		<Head>
 			<link rel="icon" href="/favicon.ico" />
@@ -29,9 +29,9 @@ const PageLayout = ({ config, activeTab, children }) => (
 		</Head>
 		<Sidebar activeTab={activeTab} />
 		<Header activeTab={activeTab} />
-		<div className={styles.pageContainer}>{children}</div>
-		<span>® by Kemal Ardil Gülez</span>
+		<main className={styles.pageContainer}>{children}</main>
+		{/* <span>® by Kemal Ardil Gülez</span> */}
 		<Footer config={config} />
 	</div>
 );
-export default PageLayout;
+export default Layout;
