@@ -1,0 +1,17 @@
+<urlset>
+    <url>
+        <loc>https://ardilgulez.me/</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ardilgulez.me/blog</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://ardilgulez.me/contacts</loc>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>

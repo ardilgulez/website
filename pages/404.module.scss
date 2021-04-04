@@ -1,0 +1,21 @@
+@import '../styles/vars.scss';
+
+.header {
+    font-family: "Fira Sans", sans-serif;
+    margin: 8rem 0;
+}
+
+.subheader {
+    font-family: "Fira Sans", sans-serif;
+    margin: 1rem 0;
+}
+
+.link {
+    font-family: inherit;
+    color: $nav_list_active_page_color;
+
+    &:hover {
+        color: $nav_list_active_page_color;
+        text-decoration: underline;
+    }
+}
