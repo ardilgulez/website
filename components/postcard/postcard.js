@@ -10,6 +10,7 @@ export default function PostCard({ id, date, title, subtitle, heroimage, preview
 			<Link href={`/posts/${id}`}>
 				<div className={style.cardClickable}>
 					<h3 className={style.postHeading}>{title}</h3>
+					<h6 className={style.subtitle}>{subtitle}</h6>
 					<small className={style.smallDate}>
 						<Date dateString={date} />
 					</small>

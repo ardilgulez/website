@@ -1,6 +1,8 @@
 import { Layout, Date } from '../../components/index';
 import { getAllPostIds, getPostData } from '../../lib/posts';
+import * as style from './[id].module.scss';
 import Head from 'next/head';
+import Image from 'next/image';
 
 const Post = ({ config, postData }) => (
 	<Layout config={config} activeTab={'blog'}>
@@ -9,10 +11,11 @@ const Post = ({ config, postData }) => (
 		</Head>
 		<article>
 			<h1>{postData.title}</h1>
-			<div>
+			<Image className={style.heroImage} width={700} height={400} src={postData.heroimage} />
+			<small className={style.smallDate}>
 				<Date dateString={postData.date} />
-			</div>
-			<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+			</small>
+			<div className={style.blogBody} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 		</article>
 	</Layout>
 );
