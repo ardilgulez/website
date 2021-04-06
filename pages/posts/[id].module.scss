@@ -1,0 +1,21 @@
+.smallDate {
+    color: #aaaaaa;
+    line-height: 3;
+}
+
+.blogBody {
+    line-height: 1.6;
+    font-size: 1.25rem;
+
+    em {
+        color: #aaaaaa;
+        font-size: 1rem;
+        a {
+            color: #888888;
+        }
+    }
+}
+
+.heroImage {
+    z-index: 1;
+}

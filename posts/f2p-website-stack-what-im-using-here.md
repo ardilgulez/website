@@ -1,6 +1,6 @@
 ---
 title: "F2P Personal Website Stack: What I'm Using Here"
-subtitle: ""
+subtitle: "You won't need to pay for it until a sizeable traffic comes your way."
 date: "2021-04-05"
 heroimage: "/f2p-website-stack-what-im-using-here/hero-image.jpg"
 preview: "Personal websites make you pretty cool in your circles as a professional. It's the next step to take to have a distinguished career in other professions, and even more important for a developer. It's a must-have and it's the first thing to get, if being considered seriously as a developer sounds like a good thing. Me? I'm not the best example. I've been going around as a developer with no personal website for 7+ years, until I opened my website. The aim of this post is to give you a direction towards getting your own personal website up and running without swiping your credit card at every step (virtually of course) other than buying the domain."
@@ -56,7 +56,7 @@ Go to the contact form in my website, type your first name, last name, email add
 
 I know, I know, AWS isn't exactly free. However, if you have 400 people, each one using the contact form 5 times, you're bound to pay a grand sum of zero dollars. This is why I chose AWS as my contact form backend.
 
-If you would like to check it out yourself, [[https://aws.amazon.com/](https://aws.amazon.com/)](here) is the link.
+If you would like to check it out yourself, [here](https://aws.amazon.com/) is the link.
 
 If you would like to create a Minimum Viable Personal Website, a stack from top to this point should be enough.
 
