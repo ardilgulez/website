@@ -1,7 +1,9 @@
 ---
 title: "F2P Personal Website Stack: What I'm Using Here"
+subtitle: ""
 date: "2021-04-05"
-hero-image: "/f2p-website-stack-what-im-using-here/nextjs.jpg"
+heroimage: "/f2p-website-stack-what-im-using-here/hero-image.jpg"
+preview: "Personal websites make you pretty cool in your circles as a professional. It's the next step to take to have a distinguished career in other professions, and even more important for a developer. It's a must-have and it's the first thing to get, if being considered seriously as a developer sounds like a good thing. Me? I'm not the best example. I've been going around as a developer with no personal website for 7+ years, until I opened my website. The aim of this post is to give you a direction towards getting your own personal website up and running without swiping your credit card at every step (virtually of course) other than buying the domain."
 ---
 
 Personal websites make you pretty cool in your circles as a professional. It's the next step to take to have a distinguished career in other professions, and even more important for a developer. It's a must-have and it's the first thing to get, if being considered seriously as a developer sounds like a good thing. Me? I'm not the best example. I've been going around as a developer with no personal website for 7+ years, until I opened [my website](https://ardilgulez.me). The aim of this post is to give you a direction towards getting your own personal website up and running without swiping your credit card at every step (virtually of course) other than buying the domain.

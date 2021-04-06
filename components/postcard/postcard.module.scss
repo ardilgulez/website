@@ -1,0 +1,32 @@
+.postCard {
+    border: 1px solid #aaaaaa;
+    border-radius: 0 0 5px 5px;
+    padding: 0;
+}
+
+.cardClickable {
+    cursor: pointer;
+    display: flex;
+    flex-flow: column wrap;
+    &:hover{
+        .postHeading {
+            text-decoration: underline;
+        }
+    }
+}
+
+.smallDate {
+    color: #aaaaaa;
+    margin: 0 5px;
+}
+
+.preview {
+    margin: 15px 5px;
+    line-height: 1.15;
+    text-decoration: none !important;
+    color: #444444;
+}
+
+.postHeading {
+    margin: 10px 5px 5px;
+}
