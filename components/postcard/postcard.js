@@ -6,7 +6,7 @@ import * as style from './postcard.module.scss';
 export default function PostCard({ id, date, title, subtitle, heroimage, preview }) {
 	return (
 		<li className={style.postCard} key={id}>
-			<Image width={700} height={400} src={heroimage} />
+			<Image width={800} height={500} src={heroimage} />
 			<Link href={`/posts/${id}`}>
 				<div className={style.cardClickable}>
 					<h3 className={style.postHeading}>{title}</h3>

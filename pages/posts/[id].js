@@ -11,7 +11,7 @@ const Post = ({ config, postData }) => (
 		</Head>
 		<article>
 			<h1>{postData.title}</h1>
-			<Image className={style.heroImage} width={700} height={400} src={postData.heroimage} />
+			<Image className={style.heroImage} width={800} height={500} src={postData.heroimage} />
 			<small className={style.smallDate}>
 				<Date dateString={postData.date} />
 			</small>
