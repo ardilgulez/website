@@ -1,122 +1,130 @@
 {
-	"name": "Kemal Ardıl Gülez",
-	"url": "https://ardilgulez.me",
-	"image": "https://ardilgulez.me/hero-image.png",
-	"description": "Passionate Software Engineer building himself up every day. Work experience: Java & Spring Boot, Python & Django, Node & Express, React, Angular.",
-	"nowLearning": "Now Learning: Electron.",
-	"googleSiteVerification": "l-2bAPepzIrUEjJVEiLN89cR6ajZ48CZqRzIrzC0-i8",
-	"bio": "Making computers grant my (and my clients') wishes since 2013",
-	"siteTitle": "Kemal Ardıl Gülez | Full Stack Software Engineer",
-	"credits": "by Kemal Ardıl Gülez",
-	"socialLinks": {
-		"Github": "https://github.com/ardilgulez",
-		"Linkedin": "https://linkedin.com/in/ardilgulez",
-		"Twitter": "https://twitter.com/ardilgulez"
-	},
-	"employmentHistory": [
-		{
-			"name": "Hexad GmbH",
-			"titles": [
-				{
-					"title": "Senior Software Engineer",
-					"date": "Nov 2019 - Still"
-				}
-			],
-			"description": "Took integral part in development of a variety of customer projects",
-			"responsibilities": [
-				"Coordinated with customers to get customer requirements and make project roadmap decisions",
-				"Converted customer requirements into high level technical solutions",
-				"Oversaw implementations of technical solutions",
-				"Ensured the code quality and continuous delivery",
-				"Developed high performing backend with Java/Kotlin and Spring Boot",
-				"Developed modular and responsive frontend with Angular 12",
-				"Took part in hiring creative and solution oriented engineers"
-			],
-			"technologies": [
-				"Java",
-				"Kotlin",
-				"Spring Boot",
-				"MySQL",
-				"Angular 12",
-				"Docker",
-				"AWS",
-				"Terraform",
-				"Concourse",
-				"Git",
-				"GitHub Actions"
-			],
-			"dates": "Nov 2019 - Still Working"
-		},
-		{
-			"name": "incapptic Connect GmbH",
-			"titles": [
-				{
-					"title": "Senior Backend Developer",
-					"date": "Oct 2017 - Nov 2019"
-				}
-			],
-			"description": "Took an integral part in development of the App Release Automation product of the company",
-			"responsibilities": [
-				"Took a big part in progression of less experienced developers",
-				"Developed a lightweight backend with Python, Django and PostgreSQL",
-				"Developed a robust frontend with React and Redux",
-				"Developed multiple key integrations",
-				"Oversaw the code quality and customer experience",
-				"Coordinated with hosting providers for deployments and continuous availability",
-				"Took integral part in hiring technical professionals"
-			],
-			"technologies": [ "Python", "Django", "PostgreSQL", "React", "Redux", "Git", "CircleCI" ],
-			"dates": "Oct 2017 - Nov 2019"
-		},
-		{
-			"name": "Piri Reis Bilisim Teknolojileri",
-			"titles": [
-				{
-					"title": "Senior Software Engineer",
-					"date": "May 2016 - Oct 2017"
-				}
-			],
-			"description": "Spearheaded the development of the Geographical Business Intelligence product of the company",
-			"responsibilities": [
-				"Made vital technology decisions for product development",
-				"Created a microservice architecture in the backend using Docker",
-				"Led the development of microservices using a variety of technologies",
-				"Oversaw the frontend development",
-				"Hired a team of qualified and ambitious professionals to work together with"
-			],
-			"technologies": [
-				"Java",
-				"Spring Boot",
-				"Python",
-				"Flask",
-				"Javascript",
-				"Node.js",
-				"GDAL",
-				"PostgreSQL",
-				"MongoDB",
-				"Git"
-			],
-			"dates": "May 2016 - Oct 2017"
-		},
-		{
-			"name": "Etiya Bilgi Teknolojileri",
-			"titles": [
-				{
-					"title": "Software Engineer",
-					"date": "Feb 2015 - May 2016"
-				},
-				{
-					"title": "Junior Software Engineer",
-					"date": "Oct 2013 - Feb 2015"
-				}
-			],
-			"description": "Took part in development of the flagship CRM Suite of the company that specializes for Telco Industry and its integration to the biggest customer of the company: Türk Telekom (Turkish Telecom)",
-			"responsibilities": [
-				"Took part in development of a highly available backend with Java that served tens of millions of customers",
-				"Took part in development of a versatile frontend with JSF"
-			],
-			"technologies": [ "Java", "JSF", "Oracle DB", "Jenkins", "SVN" ],
-			"dates": "Oct 2013 - May 2016"
-		}
-	]
+    "name": "Kemal Ardıl Gülez",
+    "url": "https://ardilgulez.me",
+    "image": "https://ardilgulez.me/hero-image.png",
+    "description": "Passionate Software Engineer building himself up every day. Work experience: Java & Spring Boot, Python & Django, Node & Express, React, Angular.",
+    "nowLearning": "Now Learning: Next.js",
+    "googleSiteVerification": "l-2bAPepzIrUEjJVEiLN89cR6ajZ48CZqRzIrzC0-i8",
+    "bio": "Making computers grant my (and my clients') wishes since 2013",
+    "siteTitle": "Kemal Ardıl Gülez | Full Stack Software Engineer",
+    "credits": "by Kemal Ardıl Gülez",
+    "socialLinks": {
+        "Github": "https://github.com/ardilgulez",
+        "Linkedin": "https://linkedin.com/in/ardilgulez",
+        "Twitter": "https://twitter.com/ardilgulez"
+    },
+    "employmentHistory": [
+        {
+            "name": "Hexad GmbH",
+            "titles": [
+                {
+                    "title": "Senior Software Engineer",
+                    "date": "Nov 2019 - Still"
+                }
+            ],
+            "description": "Took integral part in development of a variety of customer projects",
+            "responsibilities": [
+                "Coordinated with customers to get customer requirements and make project roadmap decisions",
+                "Converted customer requirements into high level technical solutions",
+                "Oversaw implementations of technical solutions",
+                "Ensured the code quality and continuous delivery",
+                "Developed high performing backend with Java/Kotlin and Spring Boot",
+                "Developed modular and responsive frontend with Angular 12",
+                "Took part in hiring creative and solution oriented engineers"
+            ],
+            "technologies": [
+                "Java",
+                "Kotlin",
+                "Spring Boot",
+                "MySQL",
+                "Angular 12",
+                "Docker",
+                "AWS",
+                "Terraform",
+                "Concourse",
+                "Git",
+                "GitHub Actions"
+            ],
+            "dates": "Nov 2019 - Still Working"
+        },
+        {
+            "name": "incapptic Connect GmbH",
+            "titles": [
+                {
+                    "title": "Senior Backend Developer",
+                    "date": "Oct 2017 - Nov 2019"
+                }
+            ],
+            "description": "Took an integral part in development of the App Release Automation product of the company",
+            "responsibilities": [
+                "Took a big part in progression of less experienced developers",
+                "Developed a lightweight backend with Python, Django and PostgreSQL",
+                "Developed a robust frontend with React and Redux",
+                "Developed multiple key integrations",
+                "Oversaw the code quality and customer experience",
+                "Coordinated with hosting providers for deployments and continuous availability",
+                "Took integral part in hiring technical professionals"
+            ],
+            "technologies": [
+                "Python",
+                "Django",
+                "PostgreSQL",
+                "React",
+                "Redux",
+                "Git",
+                "CircleCI"
+            ],
+            "dates": "Oct 2017 - Nov 2019"
+        },
+        {
+            "name": "Piri Reis Bilisim Teknolojileri",
+            "titles": [
+                {
+                    "title": "Senior Software Engineer",
+                    "date": "May 2016 - Oct 2017"
+                }
+            ],
+            "description": "Spearheaded the development of the Geographical Business Intelligence product of the company",
+            "responsibilities": [
+                "Made vital technology decisions for product development",
+                "Created a microservice architecture in the backend using Docker",
+                "Led the development of microservices using a variety of technologies",
+                "Oversaw the frontend development",
+                "Hired a team of qualified and ambitious professionals to work together with"
+            ],
+            "technologies": [
+                "Java",
+                "Spring Boot",
+                "Python",
+                "Flask",
+                "Javascript",
+                "Node.js",
+                "GDAL",
+                "PostgreSQL",
+                "MongoDB",
+                "Git"
+            ],
+            "dates": "May 2016 - Oct 2017"
+        },
+        {
+            "name": "Etiya Bilgi Teknolojileri",
+            "titles": [
+                {
+                    "title": "Software Engineer",
+                    "date": "Feb 2015 - May 2016"
+                },
+                {
+                    "title": "Junior Software Engineer",
+                    "date": "Oct 2013 - Feb 2015"
+                }
+            ],
+            "description": "Took part in development of the flagship CRM Suite of the company that specializes for Telco Industry and its integration to the biggest customer of the company: Türk Telekom (Turkish Telecom)",
+            "responsibilities": [
+                "Took part in development of a highly available backend with Java that served tens of millions of customers",
+                "Took part in development of a versatile frontend with JSF"
+            ],
+            "technologies": ["Java", "JSF", "Oracle DB", "Jenkins", "SVN"],
+            "dates": "Oct 2013 - May 2016"
+        }
+    ]
 }
